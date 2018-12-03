@@ -60,6 +60,17 @@ In order to update a row:
     
 Where `index` is the position we want to update, `obj` is the new object we want to keep reference and `displayData` is the new data to be display in the `OTable`.
 
+## Retrieving a row
 
+In order to retrieve/get a row:
 
+    int index = myOTable.getSelectedIndex();
+    myOTable.getRow(index);
 
+Where `index` is the position we want to retrieve. In the example above we retrieve the selected index object in the `OTable`.
+
+## Removing/clearing all rows
+
+In order to remove all rows in the `OTable`:
+
+    myOTable.clear();
